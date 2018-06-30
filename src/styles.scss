@@ -1,0 +1,15 @@
+@import "./_partial.scss";
+@font-face {
+  font-family: 'Fenix';
+  src: url('/assets/fenix.ttf') format('truetype');
+}
+
+html,
+body {
+  background-color: black;
+  font-family: 'Fenix' !important;
+}
+
+.white {
+  color: $white;
+}

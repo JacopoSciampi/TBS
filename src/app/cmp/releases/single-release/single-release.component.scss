@@ -1,0 +1,33 @@
+@import "../../../../_partial.scss";
+.icomage {
+  width: 200px;
+  height: 200px;
+}
+
+.white {
+  color: #fff;
+  padding: 16px;
+}
+
+.blu {
+  color: rgb(79, 79, 236);
+}
+
+.icon {
+  color: $soft-red;
+  transition: all .3s ease-in-out;
+  margin-left: 8px;
+  &:hover {
+    color: $hard-red;
+    cursor: pointer;
+  }
+}
+
+.no-link-custom {
+  color: $soft-red;
+  transition: all .3s ease-in-out;
+  &:hover {
+    color: $hard-red;
+    cursor: pointer;
+  }
+}

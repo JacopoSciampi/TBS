@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row" *ngIf="isLoading">
+    Loading...
+  </div>
+  <div class="row" *ngIf="!isLoading">
+    <div class="col-md-12 margin">
+      <span>Search by title : </span>
+      <input #ip type="text" class="form-group" placeholder="Type something" (keyup)="onSearchTyped(ip.value)">
+    </div>
+    <div class="col-md-12" *ngFor="let data of releases; let idx = index">
+      <app-single-release [data]="releases[idx]"></app-single-release>
+    </div>
+    <div class="col-md-12 text-center white" *ngIf="releases.length === 0">
+      <h4>
+        No songs found
+      </h4>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <app-navbar></app-navbar>
+    </div>
+    <div class="col-md-12 text-center">
+      <img src="/assets/logo.png" alt="TheBrickSlayer Logo" class="logo">
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center white">
+      <h4>♪ EDM • DUBSTEP • HARDSTYLE • ELECTRO • CHILLSTEP ♪</h4>
+    </div>
+    <div class="col-md-12 text-center boxed">
+      <span class="nav-link-custom bar" (click)="onSectionClick(navigationListKeys.releases)">Releases</span>
+      <i class="fa fa-play spacer" aria-hidden="true"></i>
+      <span class="nav-link-custom bar" (click)="onSectionClick(navigationListKeys.bio)">Biography</span>
+      <i class="fa fa-pause spacer" aria-hidden="true"></i>
+      <span class="nav-link-custom bar" (click)="onSectionClick(navigationListKeys.content)">Free Content</span>
+      <i class="fa fa-forward spacer" aria-hidden="true"></i>
+      <span class="nav-link-custom bar" (click)="onSectionClick(navigationListKeys.dreamcatcher)">DreamCatcher</span>
+      <i class="fa fa-eject spacer" aria-hidden="true"></i>
+      <span class="nav-link-custom bar" (click)="onSectionClick(navigationListKeys.collab)">Collab Bro?</span>
+    </div>
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

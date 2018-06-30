@@ -1,0 +1,18 @@
+@import "../../../../_partial.scss";
+.custom-navbar {
+  color: white;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 16px;
+  font-size: 20px;
+}
+
+.icon {
+  color: $soft-red;
+  transition: all .3s ease-in-out;
+  margin-left: 8px;
+  &:hover {
+    color: $hard-red;
+    cursor: pointer;
+  }
+}

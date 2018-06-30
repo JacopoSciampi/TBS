@@ -1,0 +1,115 @@
+<div class="container white">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{data.imageUrl}}" class="icomage" title="{{data.track.name}}" alt="Couldn't retrive image from host">
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- RIGA -->
+          <div class="row">
+            <div class="col-md-2">
+              <h4>
+                <span class="blu">
+                  Title:
+                </span>
+              </h4>
+            </div>
+            <div class="col-md-9">
+              <h4>
+                {{data.track.name}}
+              </h4>
+            </div>
+            <div class="col-md-1 text-right" *ngIf="!!data.track.youtubeUrl">
+              <h4>
+                <i class="fa fa-youtube-square fa-lg icon" (click)="onNavigateIconClick(data.track.youtubeUrl)"></i>
+              </h4>
+            </div>
+          </div>
+          <!-- FINE RIGA -->
+          <!-- RIGA -->
+          <div class="row">
+            <div class="col-md-2">
+              <h4>
+                <span class="blu">
+                  Author:
+                </span>
+              </h4>
+            </div>
+            <div class="col-md-9">
+              <h4>
+                {{data.track.author}}
+              </h4>
+            </div>
+            <div class="col-md-1 text-right" *ngIf="!!data.track.spotifyUrl">
+              <h4>
+                <i class="fa fa-spotify fa-lg icon" (click)="onNavigateIconClick(data.track.spotifyUrl)"></i>
+              </h4>
+            </div>
+          </div>
+          <!-- FINE RIGA -->
+          <!-- RIGA -->
+          <div class="row">
+            <div class="col-md-2">
+              <h4>
+                <span class="blu">
+                  Genere:
+                </span>
+              </h4>
+            </div>
+            <div class="col-md-9">
+              <h4>
+                {{data.track.genere}}
+              </h4>
+            </div>
+            <div class="col-md-1 text-right" *ngIf="!!data.track.soundcloudUrl">
+              <h4>
+                <i class="fa fa-soundcloud fa-lg icon" (click)="onNavigateIconClick(data.track.soundcloudUrl)"></i>
+              </h4>
+            </div>
+          </div>
+          <!-- FINE RIGA -->
+          <!-- RIGA -->
+          <div class="row">
+            <div class="col-md-2">
+              <h4>
+                <span class="blu">
+                  Published:
+                </span>
+              </h4>
+            </div>
+            <div class="col">
+              <h4>
+                {{data.track.yearPub}}
+              </h4>
+            </div>
+          </div>
+          <!-- FINE RIGA -->
+          <!-- RIGA -->
+          <div class="row">
+            <div class="col-md-2">
+              <h4>
+                <span class="blu">
+                  Download:
+                </span>
+              </h4>
+            </div>
+            <div class="col" *ngIf="!!data.urlRedirect">
+              <h4>
+                <span class="no-link-custom">
+                  <a class="no-link-custom" (click)="onNavigateIconClick(data.urlRedirect)">Free Download</a>
+                </span>
+              </h4>
+            </div>
+            <div class="col" *ngIf="!data.urlRedirect">
+              <h4>
+                No link yet. Sorry :(
+              </h4>
+            </div>
+          </div>
+          <!-- FINE RIGA -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
